@@ -1,0 +1,16 @@
+import numpy as np
+
+arr = np.array([10, 20, 30, 20, 40, 50, 30, 60])
+print("Original Array:", arr)
+
+result = np.where(arr == 30)
+print("Position of 30:", result)
+
+filtered = arr[arr > 30]
+print("Values greater than 30:", filtered)
+
+unique = np.unique(arr)
+count = np.count_nonzero(arr > 30)
+
+print("Unique Values:", unique)
+print("Count greater than 30:", count)
